@@ -1,0 +1,154 @@
+#sidenav{
+    height: calc(100% - 80px);
+    position: fixed;
+    z-index: 1;
+    top: 40px;
+    left: 0;
+    background-color:white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-bottom: 50px;
+    text-align: justify;
+    border-right: 1px solid #D3D3D3;
+}
+
+#sidenav ul {
+    list-style: none;
+}
+
+#sidenav li {
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+#sidenav button{
+    display: block;
+}
+
+.clicked {
+    background-color: #e8e8e8;
+    width: 100%;
+    transition: .8s;
+}
+
+#inbox, #sent, #compose, #archived {
+    width: 100%;
+    transition: .8s;
+}
+
+#inbox i, #sent i, #compose i, #archived i{
+    margin-right: 10px;
+}
+
+#inbox:hover, #sent:hover, #compose:hover, #archived:hover{
+    background-color: #e8e8e8;
+    cursor: pointer;
+}
+
+#inbox:active, #sent:focus, #compose:focus, #archived:focus{
+    background-color: #e8e8e8;
+}
+
+.user-info{
+    position: fixed;
+    top:10px;
+    right:10px;
+    text-align: right;
+}
+
+.user-info a{
+    margin-right: 5px;
+    color:white;
+    text-decoration: none;
+}
+
+.user-info button {
+    border-radius: 5px;
+}
+
+.user-info button:hover{
+    opacity: 1;
+}
+
+
+.main-div{
+    align-items: center;
+    margin-left:100px;
+    margin-top:50px;
+    width: 80%;
+}
+
+#compose-view textarea {
+    min-height: 400px;
+    margin-bottom: 10px;
+
+}
+
+#compose-view button {
+    margin-bottom: 20px;
+}
+
+tr{
+    height: 40px;
+    outline: thin solid;
+}
+
+.email-general-info:hover {
+  box-shadow: 0 0 20px rgba(33,33,33,.2); 
+  cursor: pointer;
+}
+
+.email-general-info i{
+    margin-left: 10px;
+}
+
+.email-general-info td{
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 30px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;   
+}
+
+.email-general-info td:nth-child(2){
+    text-align: left;
+    font-weight: bold;
+    width: 250px;
+    margin-left: 20px;
+}
+
+.email-general-info td:nth-child(3){
+    font-weight: 500;
+    width: 200px;
+    text-align: left;
+}
+
+.email-general-info td:nth-child(4){
+    opacity: 0.8;
+    text-align: right;
+}
+
+ .email-spec-info b{
+    margin-bottom: 20px;
+}
+
+.email-spec-info p{
+    white-space: pre-line;
+}
+
+
+ #emails-view button{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     margin-right: 5px;
+ }
+
+ /* LOGIN/REGISTER */
+.login, .register{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
